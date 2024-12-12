@@ -1,0 +1,452 @@
+/* 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faq-consultation {
+    padding: 20px;
+  }
+  
+  
+  .faq-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .faq-section h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .faq-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .faq-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .faq-list span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .faq-list button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  
+  .consultation-section {
+    background: #f3f3f3;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .consultation-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+  
+  .consultation-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .consultation-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .consult-btn {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .consult-btn:hover {
+    background: #555;
+  }
+   */
+
+/* Global Styles */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .faq-consultation {
+    padding: 20px;
+  }
+  
+  
+  .faq-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .faq-section h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .faq-section p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .faq-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .faq-list li {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .faq-list li:hover {
+    background: #f1f1f1;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .faq-question span {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .faq-question button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    padding-left: 10px;
+  }
+  
+ 
+  .consultation-section {
+    background: #f3f3f3;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .consultation-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+  
+  .consultation-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .consultation-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .consult-btn {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .consult-btn:hover {
+    background: #555;
+  }
+   */
+
+   :root {
+    --primary-color: #0078d7;
+    --secondary-color: #32cd32;
+    --dark-background: #1a1a2e;
+    --light-background: #f4f4f4;
+    --text-color: #333;
+    --white: #ffffff;
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-background);
+    color: var(--text-color);
+}
+
+.faq-consultation {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 60px 20px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px; */
+}
+
+/* FAQ Section */
+.faq-section {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease;
+}
+
+.faq-section:hover {
+    transform: translateY(-10px);
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.faq-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: var(--secondary-color);
+}
+
+.faq-section > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.faq-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-list li {
+    background: var(--light-background);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all var(--transition-speed) ease;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    background: var(--white);
+    border-bottom: 2px solid transparent;
+    transition: all var(--transition-speed) ease;
+}
+
+.faq-question:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    border-bottom-color: var(--secondary-color);
+}
+
+.faq-question span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.faq-question button {
+    background: var(--secondary-color);
+    color: var(--white);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: transform var(--transition-speed) ease;
+}
+
+.faq-question:hover button {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 20px;
+    background: var(--light-background);
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Consultation Section */
+.consultation-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.consultation-box {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+    /* max-width: 500px; */
+    width: 100%;
+    box-shadow: 0 25px 50px rgba(0, 120, 215, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.consultation-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(-45deg);
+}
+
+.consultation-box h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.consultation-box p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+}
+
+.consult-btn {
+    background: var(--white);
+    color: var(--primary-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.consult-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .faq-consultation {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .faq-section {
+    width:100%;
+     box-shadow:none;
+  }
+    .faq-section h2 {
+        font-size: 2rem;
+    }
+
+    .consultation-box {
+        padding: 30px 20px;
+    }
+
+    .consultation-box h3 {
+        font-size: 1.5rem;
+    }
+}

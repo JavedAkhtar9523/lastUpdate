@@ -1,0 +1,116 @@
+  #android-heros{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../../assets/mobile-app-development.jpg') no-repeat center center/cover;
+  }
+  /*services Section */
+  .services-work {
+    width: 100%;
+    max-width:1100px;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section-titles {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .services-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .services-card {
+    max-width: 270px;
+    background-color: #2277AA;
+    border-radius: 0px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .services-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-details {
+    padding: 1rem;
+  }
+  
+  .services-details h4 {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .services-details p {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  .development-process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  #002147;
+    padding: 20px 20px;
+  }
+  
+  
+.faqs-section{
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+  
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-titles{
+      font-size: 2rem;
+    }
+    .section-subtitle{
+      font-size: 1rem;
+    }
+    .what-we-do {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .image {
+        margin-top: 2rem;
+        max-width: 90%;
+      }
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .services-gallery {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    
+      .services-card {
+        max-width: 50%; 
+      }
+    
+      .services-details h4 {
+        font-size: 1.2rem; 
+      }
+    
+      .services-details p {
+        font-size: 1rem;
+      }
+  }
+  

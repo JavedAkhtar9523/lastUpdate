@@ -1,0 +1,115 @@
+  .business-section{
+    margin: 0 auto;
+    padding: 45px;
+    background-color: #3171fc; 
+    color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .business-section h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff; 
+    margin-bottom: 15px;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .business-section p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #fff; 
+    font-weight: 500;
+    text-align:left;
+  }
+  
+  .business-section p:last-child {
+    margin-bottom: 0; 
+  }
+  .business-solutions-section {
+    padding: 20px;
+    margin-top: 2rem;
+    background-color: #00274d;
+    text-align: center;
+  }
+  
+  .business-solutions-card-container {
+    display: flex;
+    gap: 2px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  
+  .business-card {
+    background: #1A4E8A; 
+    color: white; /
+    border: 1px solid #1E90FF; 
+    border-radius: 2px; 
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .business-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .business-card-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-top:1rem;
+  }
+  
+  .business-card-icon {
+    margin-bottom: 15px;
+  }
+  
+  .business-card-description {
+    font-size: 0.9rem;
+    color: #fff;
+  }
+  
+  
+  /* .banner-image {
+    position: relative;
+    text-align: center;
+  } */
+  
+  
+
+  .Content-writing-container .images {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+   
+.core-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .content-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+ 
+ 
+  
+
+  

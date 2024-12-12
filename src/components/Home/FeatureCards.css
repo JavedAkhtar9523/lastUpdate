@@ -1,0 +1,99 @@
+/* General Container Styling */
+.scroll-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styling for the Row and Card Containers */
+  /* Styling for the Row and Card Containers */
+.scroll-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Creates space between cards */
+  }
+  
+  .scroll-col-lg-4 {
+    position: relative;
+    width: 100%;
+    max-width: 350px; /* Adjusts the max width of each card */
+    opacity: 0;
+    transform: translateX(100px); /* Start from the right */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* When the card becomes visible (via intersection observer) */
+  .scroll-col-lg-4.visible {
+    opacity: 1;
+    transform: translateX(0); /* Slide in */
+  }
+  
+  /* Hover effect */
+  .scroll-home-wrapper-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .scroll-home-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  .scroll-home-wrapper-img:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .scroll-home-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Slight dark background */
+    padding: 15px;
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    transition: background 0.3s ease;
+  }
+  
+  .scroll-home-content-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .scroll-home-content-subtitle {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  
+  /* Hover Effect */
+  .scroll-home-wrapper-img:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .scroll-home-content:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .scroll-feature-card {
+      max-width: 300px; /* Adjust the max width of the cards on tablet screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scroll-feature-card {
+      max-width: 100%; /* Full width for mobile */
+    }
+  }
+  

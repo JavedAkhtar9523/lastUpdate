@@ -1,0 +1,321 @@
+#Search-hero{
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url('../../assets/search-engine-marketing.jpg') no-repeat center center/cover;
+}
+.Content-writing-container {
+    padding: 50px 20px;
+    position: relative;
+    background-color: #f8f9fa; 
+  }
+  
+  .Content-writing-container .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0047ab; 
+    text-align: left;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .Content-writing-container .title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 25%; 
+    width: 50%; 
+    height: 3px; 
+    background-color: #0047ab; 
+    border-radius: 2px; 
+  }
+  
+  
+  .Content-writing-container .description {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  /* Wrapper for trapezoid effect */
+  .trapezoid-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  /* Trapezoid effect using pseudo-elements */
+  .trapezoid-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1); /* Optional overlay */
+    transform: perspective(500px) rotateX(15deg); /* Creates the trapezoid skew */
+    z-index: 1;
+  }
+  .trapezoid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Container to hold the cube */
+  .cube-container {
+    perspective: 1000px; /* Adds depth for 3D effect */
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Cube styling */
+  .cube {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    animation: rotateCube 10s infinite linear; /* Rotates the cube for effect */
+  }
+  
+  /* Faces of the cube */
+  .face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #f5f5f5;
+    border: 1px solid #ddd; /* Optional: adds borders */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures image stays within boundaries */
+  }
+  
+  /* Individual faces with transformations */
+  .front {
+    transform: rotateY(0deg) translateZ(100px);
+  }
+  .back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  .left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  .right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  .bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  /* Styling the images */
+  .face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Animation for rotation */
+  @keyframes rotateCube {
+    from {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    to {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  
+  /* .banner-image {
+    position: relative;
+    text-align: center;
+  } */
+  .sphere-shaped-image {
+    width: 300px; /* Adjust the size as needed */
+    height: 300px; /* Make width and height equal for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image scales and fits within the shape */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+    border: 5px solid #0047ab; /* Optional: Add a border */
+  }
+  .shaped-image {
+    width: 100%;
+    height: auto;
+    clip-path: polygon(50% 0%, 100% 25%, 85% 100%, 15% 100%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 85% 100%, 15% 100%, 0% 25%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .shaped-image {
+      clip-path: circle(50% at center);
+      -webkit-clip-path: circle(50% at center);
+    }
+  
+  }
+  
+  
+  .Content-writing-container .images {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+   
+.core-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .content-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+.core-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  transition: transform 0.3s ease-in-out; 
+  max-width: 300px; 
+  margin: 15px;
+}
+
+.core-image {
+  width: 100%;
+  height: 200px; 
+  overflow: hidden;
+}
+
+.core-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Text section styling */
+.core-body {
+  padding: 20px;
+  background-color: #f9f9f9; 
+}
+
+.core-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.core-description {
+  font-size: 1rem;
+  color: #777777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.core-card:hover {
+  transform: translateY(-10px); 
+}
+
+.core-card:hover .core-image img {
+  transform: scale(1.05); 
+}
+
+
+
+.wrapper {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.why-us {
+  background-color: #007bff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  border-radius: 15px; 
+  color: white;
+}
+
+.why-us-content h3 {
+  font-size: 2.5rem; 
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+  font-weight: 700; 
+  letter-spacing: 1px; 
+}
+
+.why-us-content p {
+  font-size: 1.125rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.why-us-img img {
+  width: 100%; 
+  height: auto;
+  object-fit: cover; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.why-us-img img:hover {
+  transform: scale(1.05); 
+}
+
+
+@media (max-width: 767px) {
+  .core-card {
+    max-width: 100%; 
+    margin: 10px;
+  }
+
+  .core-title {
+    font-size: 1.4rem; 
+  }
+
+  .core-description {
+    font-size: 0.9rem; 
+  }
+  .why-us {
+    padding: 20px; 
+  }
+
+  .why-us-content h3 {
+    font-size: 2rem; 
+  }
+
+  .why-us-content p {
+    font-size: 1rem; 
+  }
+
+  .why-us-img img {
+    margin-right: 0; 
+    border-radius: 8px; 
+  }
+}
+
+
+    
+   
+    
+
+  

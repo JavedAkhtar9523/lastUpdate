@@ -1,0 +1,364 @@
+/* 
+.cloud-solutions {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  
+  .hero {
+    background: url('../../assets/CloudSolution2.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  
+  .cloud-computing {
+    padding: 40px 20px;
+    background: #f9f9f9;
+  }
+  
+  .cloud-computing .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .cloud-computing img {
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  .cloud-computing h2 {
+    font-size: 2rem;
+    color: #0078d7;
+  }
+  
+  
+  .benefits {
+    padding: 40px 20px;
+    background: #0078d7;
+    color: white;
+    text-align: center;
+  }
+  
+  .benefit-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .benefit-item {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 200px;
+  }
+  
+  
+  .risk-reduction {
+    padding: 40px 20px;
+    background: black;
+    color: white;
+    min-height:440px ;
+  }
+  
+  .risk-reduction h2 {
+    color: #32cd32;
+  }
+  .riskItemIcon{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+  }
+  .icc{
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+  
+  .risk-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+  
+  .risk-item {
+    padding: 20px;
+    background: #333;
+    border-radius: 8px;
+    max-width: 200px;
+    
+  }
+  .riskItem1{
+    position: absolute;
+    left: 180px;
+    top: 20px;
+  }
+  .riskItem2{
+    position: absolute;
+    left: 430px;
+    top: 50px;
+  }
+  .riskItem3{
+    position: absolute;
+    left: 680px;
+    top: 80px;
+  }
+  .riskItem4{
+    position: absolute;
+    left: 930px;
+    top: 110px;
+  } */
+
+
+  :root {
+    --primary-color: #0078d7;
+    --secondary-color: #32cd32;
+    --dark-background: #1a1a2e;
+    --light-background: #f4f4f4;
+    --text-color: #333;
+    --white: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-background);
+  }
+  
+  .cloud-solutions {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('../../assets/CloudSolution2.jpg') no-repeat center center/cover;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+  
+  .hero-overlay {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  /* Cloud Computing Section */
+  .cloud-computing {
+    background: var(--white);
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .cloud-computing .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+  .cloud-computing h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cloud-computing img {
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cloud-computing img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Benefits Section */
+  .benefits {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .benefits h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .benefit-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .benefit-item {
+    background: var(--white);
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .benefit-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  /* Risk Reduction Section */
+  .risk-reduction {
+    background: var(--dark-background);
+    color: var(--white);
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 570px;
+  }
+  
+  .risk-reduction h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+  }
+  
+  .risk-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .risk-item {
+    background: rgba(51, 51, 51, 0.5);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    
+  }
+  
+  .risk-item:hover {
+    transform: scale(1.05);
+    background: rgba(51, 51, 51, 0.7);
+  }
+  
+  .riskItemIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .icc {
+    color: var(--white);
+  }
+  .riskItem2{
+    position: relative;
+    top: 25px;
+  }
+  .riskItem3{
+    position: relative;
+    top: 50px;
+  }
+  .riskItem4{
+    position: relative;
+    top: 70px;
+  }
+  
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 1024px) {
+    .cloud-computing .content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .cloud-computing img {
+      max-width: 100%;
+      margin-top: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .benefit-items,
+    .risk-items {
+      grid-template-columns: 1fr;
+    }
+  }

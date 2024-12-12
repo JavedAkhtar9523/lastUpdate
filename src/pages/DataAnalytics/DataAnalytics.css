@@ -1,0 +1,96 @@
+
+.Data-Analytics-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Data-Analytics-content h2 {
+  font-size: 2rem;
+  color: #00539c; 
+  margin-bottom: 20px;
+  border-bottom: 3px solid #f2a900; 
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.Data-Analytics-content h3 {
+  font-size: 1.5rem;
+  color: #0078d4;
+  margin-top: 30px;
+}
+
+.Data-Analytics-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.Data-Analytics-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Data-Analytics-content ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.Data-Analytics-content ul li strong {
+  color: #00539c;
+}
+
+.Data-Analytics-content ul li:before {
+  content: "✔";
+  font-size: 1.2rem;
+  color: #f2a900;
+  margin-right: 10px;
+}
+
+.cta-button {
+  background-color: #00539c;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f2a900;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Data-Analytics-content {
+    padding: 15px;
+  }
+
+  .Data-Analytics-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .Data-Analytics-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .Data-Analytics-content p {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}

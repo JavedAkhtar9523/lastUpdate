@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #3B82F6;
+  --secondary-color: #10B981;
+  --background-light: #F9FAFB;
+  --text-dark: #1F2937;
+  --text-muted: #6B7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+}
+
+.business-solutions-platform {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('../../assets/AI.jpg') no-repeat center center/cover;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  min-height: 480px;
+}
+
+.hero-overlay {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-left: 340px;
+  width: 800px;
+  height: 300px;
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--white);
+}
+
+/* Services Section */
+.services-section {
+  /* padding: 6rem 4rem; */
+  text-align: center;
+}
+
+.services-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  /* margin-bottom: 3rem; */
+  
+}
+
+.service-tab {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid rgb(138, 138, 138);
+  color: #3baef6;
+}
+
+.service-tab.active {
+  border-color: var(--primary-color);
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.service-details {
+  background: white;
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.service-breakdown {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 2rem; */
+}
+
+.key-points, .service-benefits {
+  flex: 1;
+}
+
+.key-points ul, .service-benefits ul {
+  list-style-type: none;
+}
+
+.key-points li, .service-benefits li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Testimonials */
+.testimonials-section {
+  background-color: white;
+  /* padding: 6rem 4rem; */
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: var(--background-light);
+  /* padding: 2rem; */
+  border-radius: 15px;
+  max-width: 500px;
+}
+
+.testimonial-footer {
+  /* margin-top: 1.5rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  color: #FFD700;
+  /* margin-top: 0.5rem; */
+}
+
+/* Advantages Section */
+.advantages-section {
+  /* padding: 6rem 4rem; */
+  text-align: center;
+}
+
+.advantages-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.advantage-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Consultation Section */
+.consultation_b-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.consultation-box {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--white);
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  /* max-width: 500px; */
+  width: 100%;
+  box-shadow: 0 25px 50px rgba(0, 120, 215, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.consultation-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(-45deg);
+}
+
+.consultation-box h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+}
+
+.consultation-box p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+.consult-btn {
+  background: var(--white);
+  color: var(--primary-color);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.consult-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  
+}
+
+
+/* ================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #3B82F6;
+  --secondary-color: #10B981;
+  --background-light: #F9FAFB;
+  --text-dark: #1F2937;
+  --text-muted: #6B7280;
+  --gradient-primary: linear-gradient(135deg, #3B82F6, #10B981);
+}
+
+
+
+
+
+/* Testimonial Enhancements */
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-avatar {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Advantages Section Enhancements */
+.advantage-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.advantage-details {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+/* New Industry Expertise Section */
+.industry-expertise-section {
+  background-color: white;
+  /* padding: 6rem 4rem; */
+  text-align: center;
+}
+
+.industry-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.industry-card {
+  background: var(--background-light);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.industry-icon {
+  font-size: 3rem;
+  /* margin-bottom: 1rem; */
+}

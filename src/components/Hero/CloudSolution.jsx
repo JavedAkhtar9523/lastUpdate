@@ -44,7 +44,7 @@ const CloudSolutionsPage = ({ faqs }) => {
       <section className="cloud-computing">
         <h2>Cloud Computing Solutions</h2>
         <div className="content">
-          <p>
+          <p style={{ color: "#0078d7" }}>
             Our Custom Software Development services focus on creating
             applications uniquely designed for your business goals. Whether you
             need a web, mobile, or desktop application, we deliver solutions

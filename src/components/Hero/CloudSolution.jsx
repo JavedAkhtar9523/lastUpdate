@@ -25,11 +25,11 @@ const faqs = [
       "Yes, an internet connection is typically required to access cloud services.",
   },
 ];
-const CloudSolutionsPage = ({faqs}) => {
+const CloudSolutionsPage = ({ faqs }) => {
   return (
     <div className="cloud-solutions">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero_cloud">
         <div className="hero-overlay">
           <h1>Cloud Solution</h1>
           <p>
@@ -57,7 +57,7 @@ const CloudSolutionsPage = ({faqs}) => {
       {/* Benefits Section */}
       <section className="benefits">
         <h2>The Benefits of Cloud Business Solutions</h2>
-        <p>
+        <p style={{ color: "#eee" }}>
           With countless businesses now employing hybrid working models to allow
           employees to work both on-site and remotely, it is vital that your
           team can access what they need when they need it.
@@ -109,7 +109,7 @@ const CloudSolutionsPage = ({faqs}) => {
             <div className="riskItemIcon">
               <CiCloudOn size={20} className="icc" />
             </div>
-            <p>
+            <p style={{ color: "#eee" }}>
               Cloud solutions help mitigate risks by ensuring your data is
               secure and always accessible.
             </p>
@@ -118,7 +118,7 @@ const CloudSolutionsPage = ({faqs}) => {
             <div className="riskItemIcon">
               <CiCloudOn size={20} className="icc" />
             </div>
-            <p>
+            <p style={{ color: "#eee" }}>
               Adopt advanced cloud technology for streamlined operations and
               optimized workflows.
             </p>
@@ -127,7 +127,7 @@ const CloudSolutionsPage = ({faqs}) => {
             <div className="riskItemIcon">
               <CiCloudOn size={20} className="icc" />
             </div>
-            <p>
+            <p style={{ color: "#eee" }}>
               Build scalable infrastructure that grows alongside your
               business.jdjhx hjhjz hhjdaHb hbhdsj bhjds
             </p>
@@ -136,7 +136,7 @@ const CloudSolutionsPage = ({faqs}) => {
             <div className="riskItemIcon">
               <CiCloudOn size={20} className="icc" />
             </div>
-            <p>
+            <p style={{ color: "#eee" }}>
               Build scalable infrastructure that grows alongside your
               business.jdjhx hjhjz hhjdaHb hbhdsj bhjds
             </p>
@@ -144,7 +144,7 @@ const CloudSolutionsPage = ({faqs}) => {
         </div>
       </section>
       <section>
-        <FaqAndConsultation faqs={faqs}/>
+        <FaqAndConsultation faqs={faqs} />
       </section>
     </div>
   );

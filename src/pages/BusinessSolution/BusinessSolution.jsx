@@ -148,7 +148,7 @@ const BusinessSolutionsPage = () => {
   return (
     <div className="business-solutions-platform">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero_business">
         <div className="hero-overlay">
           <h1>Business Solution</h1>
           <p>

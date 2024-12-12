@@ -89,7 +89,7 @@ body {
 } */
 
 /* Hero Section */
-.hero {
+.hero_mobile {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
               url('../../assets/mobile-app-development.jpg') no-repeat center center/cover;
@@ -102,7 +102,7 @@ body {
 
 
 
-.hero h1 {
+.hero_mobile h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   color: var(--secondary-color);
@@ -111,7 +111,7 @@ body {
   font-weight: 700;
 }
 
-.hero p {
+.hero_mobile p {
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--white);

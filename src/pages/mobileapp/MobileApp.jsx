@@ -139,11 +139,12 @@ const MobileAppDevelopmentPage = () => {
         </div>
       </section> */}
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero_mobile">
         <div className="hero-overlay">
           <h1>Mobile App Development</h1>
           <p>
-          Convert your ideas into a live application with Thinkweb Hub app development services
+            Convert your ideas into a live application with Thinkweb Hub app
+            development services
           </p>
         </div>
       </section>

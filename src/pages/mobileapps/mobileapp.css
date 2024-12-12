@@ -268,7 +268,7 @@
     background: rgba(0, 0, 0, 0.6);
   }
   
-  .hero-content {
+  .hero-content_mobile {
     position: relative;
     z-index: 2;
     max-width: 800px;

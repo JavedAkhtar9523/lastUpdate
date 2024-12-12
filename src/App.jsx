@@ -68,6 +68,7 @@ import CloudSolutionsPage from "./components/Hero/CloudSolution";
 import MobileAppDevelopment from "./pages/mobileapps/MobileApp";
 import ProductSpreads from "./pages/Spreads/ProductSpreads";
 import HybridApp from "./pages/HybridApp/HybridApp";
+import Hero from "./components/Hero/Hero";
 
 export const MyContext = createContext();
 
@@ -102,19 +103,34 @@ const PublicRoutes = () => (
   <Routes>
     <Route path="/" element={<HomeUpdated />} />
     <Route path="/services" element={<ServicePage />} />
-    <Route path="/services/website-app-development" element={<CreateWebsite/>} /> 
-    <Route path="/services/ios-app-development" element={<IphoneApp/>} />
-    <Route path="/services/mobile-solution" element={<MobileAppDevelopment/>} />
-    <Route path="/services/android-app-development" element={<AndroidDevelopment/>} />
-    <Route path="/services/hybrid-app-development" element={<HybridApp/>} />
+    <Route
+      path="/services/website-app-development"
+      element={<CreateWebsite />}
+    />
+    <Route path="/services/ios-app-development" element={<IphoneApp />} />
+    <Route
+      path="/services/mobile-solution"
+      element={<MobileAppDevelopment />}
+    />
+    <Route
+      path="/services/android-app-development"
+      element={<AndroidDevelopment />}
+    />
+    <Route path="/services/hybrid-app-development" element={<HybridApp />} />
     <Route
       path="/services/software-development-services"
       element={<CustomSoftwareDevelopment />}
     />
-    <Route path="/services/content-management-system" element={< ContentWritingService/>} />
-    <Route path="/services/seo-service" element={<SearchEngine/>} />
-    <Route path="/services/business-solution" element={<BusinessSolution/>} />
-    <Route path="/services/cloud-solution-and-data-migration" element={<CloudMigration/>} />
+    <Route
+      path="/services/content-management-system"
+      element={<ContentWritingService />}
+    />
+    <Route path="/services/seo-service" element={<SearchEngine />} />
+    <Route path="/services/business-solution" element={<BusinessSolution />} />
+    <Route
+      path="/services/cloud-solution-and-data-migration"
+      element={<CloudMigration />}
+    />
     <Route path="/aboutus" element={<About />} />
     <Route path="/product" element={<ProductSpreads />} />
     <Route path="/platform" element={<Platform />} />
@@ -129,14 +145,11 @@ const PublicRoutes = () => (
       path="/services/web-designe-solution"
       element={<ResponsiveWebDesign />}
     />
-     <Route
+    <Route
       path="/services/responsive-web-designing"
       element={<ResponsiveWebDesign />}
     />
-    <Route
-      path="/services/website-development"
-      element={<WebDevelopmentPage />}
-    />
+    <Route path="/services/website-development" element={<Hero />} />
     <Route path="/services/cloud-solution" element={<CloudSolutionsPage />} />
     <Route
       path="/services/digital-marketing-solution"
@@ -159,7 +172,10 @@ const PublicRoutes = () => (
       element={<DigitalMarketingService />}
     />
     <Route path="/devops-solutions" element={<DevOpsSolutions />} />
-    <Route path="/services/bussiness-solution" element={<BusinessSolutionsPage />} />
+    <Route
+      path="/services/bussiness-solution"
+      element={<BusinessSolutionsPage />}
+    />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

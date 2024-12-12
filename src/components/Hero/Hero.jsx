@@ -100,6 +100,7 @@
 
 import React, { useState } from "react";
 import "./hero.css";
+// import image1 from "../../assets/Pngtree.jpg";
 import image1 from "../../assets/Pngtree.jpg";
 import Accordion from "./Accordian";
 import DevelopersTools from "./DevelopersTools";
@@ -155,7 +156,7 @@ const Hero = () => {
         <h2 style={{ paddingTop: "30px" }}>Web Development Process</h2>
         <div className="process-steps">
           <div className="step">
-            <div className="step-edit">
+            <div className="step-editt">
               <FaRegEdit size={15} className="editt" />
             </div>
             <h3>Requirement Gathering</h3>
@@ -164,21 +165,21 @@ const Hero = () => {
             </p>
           </div>
           <div className="step">
-            <div className="step-edit">
+            <div className="step-editt">
               <FaComputer size={15} className="editt" />
             </div>
             <h3>Design & Prototyping</h3>
             <p>We create a visual prototype and get your feedback.</p>
           </div>
           <div className="step">
-            <div className="step-edit">
+            <div className="step-editt">
               <FaRegEdit size={15} className="editt" />
             </div>
             <h3>Development</h3>
             <p>Our team of experts starts the development process.</p>
           </div>
           <div className="step">
-            <div className="step-edit">
+            <div className="step-editt">
               <FaComputer size={15} className="editt" />
             </div>
             <h3>Testing & Deployment</h3>
@@ -221,7 +222,7 @@ const Hero = () => {
       </section> */}
 
       {/* FAQ Section */}
-      <section className="faq-section">
+      <section className="faq-sectionn" style={{ marginTop: "19px" }}>
         <h2>Website Development Services</h2>
         <p>
           We Are Providing Every Web Development Service That Your Business
@@ -230,7 +231,7 @@ const Hero = () => {
         <ul className="faq-list">
           {faqs.map((faq, index) => (
             <li key={index}>
-              <div className="faq-question" onClick={() => toggleFaq(index)}>
+              <div className="faq-questionn" onClick={() => toggleFaq(index)}>
                 <span>{faq.question}</span>
                 <button>{openFaqIndex === index ? "-" : "+"}</button>
               </div>
@@ -248,10 +249,10 @@ const Hero = () => {
 
       {/* Consultation Section */}
       <section
-        className="consultation-section"
+        className="consultationn-section"
         style={{ marginBottom: "15px" }}
       >
-        <div className="consultation-box">
+        <div className="consultationn-box">
           <h3>Get Free Consultation Now!.</h3>
           <p>Let's create a powerful website that grows with your business</p>
           <button className="consult-btn">Consult Now →</button>

@@ -31,7 +31,7 @@ body {
 
 
 /* Hero Section */
-.hero {
+.hero_business {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
               url('../../assets/AI.jpg') no-repeat center center/cover;
@@ -42,7 +42,7 @@ body {
   min-height: 480px;
 }
 
-.hero-overlay {
+.hero_business-overlay {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
@@ -54,7 +54,7 @@ body {
   margin-top: 100px;
 }
 
-.hero h1 {
+.hero_business h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   color: var(--secondary-color);
@@ -63,7 +63,7 @@ body {
   font-weight: 700;
 }
 
-.hero p {
+.hero_business p {
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--white);
